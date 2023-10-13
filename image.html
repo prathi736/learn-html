@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Always write future proof HTML -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tag</title>
+    <style>
+        body{
+            background-color: #414144;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1696883312774-47a0345454f0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" width="500px" alt="no Image"/>
+    <img src="./jeep-ca.jpeg" width="400px" alt="no Image"/>
+
+    <!-- We are using this picture tag to overcome screen width problem. -->
+    <picture>
+        <source media="(min-width: 750px)" srcset="./jeep-ca.jpeg"/>
+        <source media="(min-width: 450px)" srcset="./jeep-ca.jpeg"/>
+
+        <img src="./jeep-ca.jpeg" width="400px" alt="no Image"/>
+    </picture>
+
+    <!-- Image map generator (new way to generate image with click on different parts of the image) -->
+    <img src="jeep-car.jpeg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="199,130,121,109" shape="rect">
+        <area onclick="two()" target="" alt="" title="" href="" coords="76,127,117,170" shape="rect">
+    </map>
+
+    <!-- Internal Javascript -->
+
+    <script>
+        function one() {
+            alert("You have clicked on one")
+        }
+        function two() {
+            alert("You have clicked on two")
+        }
+    </script>
+</body>
+</html>
