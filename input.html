@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input HTML</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <!-- GET:- Send data in clear text format
+         POST:- Send data to backend in encryption mode -->
+    <form action="" method="GET" accept-charset="UTF-8" autocomplete="on" enctype="text/plain">
+        <label for="fname">Full Name: </label>
+        <input type="text" name="" id="fname" placeholder="Full Name" value="John">
+        <br />
+
+        <input type="week" name="" id="">
+        <input type="reset" value="reset">
+
+        <!-- Used Rarely -->
+        <select name="cars" id="">
+            <option value="jeep">Thar</option>
+            <option value="suv">Creta</option>
+            <option value="mpv">XUV700</option>
+        </select>
+
+        <!-- Used Rarely -->
+        <input list="cars" name="car">
+        <datalist id="cars">
+            <option value="jeep">Thar</option>
+            <option value="suv">Creta</option>
+            <option value="mpv">XUV700</option>
+        </datalist>
+
+        <input type="hidden" name="">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
