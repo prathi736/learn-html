@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embed Youtube Video</title>
+    <style>
+        table {
+            justify-content: center;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <!-- Table must have two headings: title, embedded videos URL -->
     <h1>Youtube Embed Videos URL</h1>
-
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>URL</th>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+    <div>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>URL</th>
+            </tr>
+            <tr>
+                <td>JS Beginners:1</td>
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Hr5iLG7sUa0?si=KljvR4JgSQ-zSu8R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            </tr>
+            <tr>
+                <td>JS Beginners:2</td>
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/cvoLc3deAdQ?si=OQ6roMkEleAXHrX9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
